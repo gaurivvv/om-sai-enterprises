@@ -14,10 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- AOS Animation -->
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="icon" href="om-sai-logo.png">
 </head>
 
 <body>
@@ -26,17 +24,14 @@
 <nav class="navbar">
 
     <div class="logo">
-        <img src="om-sai-logo.png" alt="Om Sai Enterprises">
-
+        <img src="om-sai-logo.png" alt="Logo">
         <div class="logo-text">
             <h2>Om Sai Enterprises</h2>
             <p>Solar Energy Solutions</p>
         </div>
     </div>
 
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-
-    <ul class="nav-links" id="nav-links">
+    <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -49,27 +44,14 @@
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
 
-    <div class="hero-content" data-aos="fade-up">
-
+    <div class="hero-content">
         <h1>Powering Your Future With Solar Energy</h1>
-
-        <p>
-            Trusted Solar Installation & Renewable Energy Solutions
-            for Homes and Businesses.
-        </p>
+        <p>Trusted Solar Installation & Renewable Energy Solutions</p>
 
         <div class="hero-buttons">
-
-            <a href="#services">
-                <button class="primary-btn">Our Services</button>
-            </a>
-
-            <a href="#contact">
-                <button class="secondary-btn">Get a Service</button>
-            </a>
-
+            <a href="#services" class="btn primary">Our Services</a>
+            <a href="#contact" class="btn secondary">Get a Service</a>
         </div>
-
     </div>
 
 </section>
@@ -77,11 +59,11 @@
 <!-- ================= ABOUT ================= -->
 <section class="about" id="about">
 
-    <div class="about-image" data-aos="fade-right">
-        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1974&auto=format&fit=crop">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="Solar">
     </div>
 
-    <div class="about-content" data-aos="fade-left">
+    <div class="about-content">
 
         <h4>ABOUT US</h4>
         <h2>Trusted Solar Energy Solutions</h2>
@@ -91,10 +73,10 @@
         </p>
 
         <div class="about-features">
-            <div class="feature">✔ Residential Solar</div>
-            <div class="feature">✔ Commercial Solar</div>
-            <div class="feature">✔ Solar Maintenance</div>
-            <div class="feature">✔ 24/7 Support</div>
+            <div>✔ Residential Solar</div>
+            <div>✔ Commercial Solar</div>
+            <div>✔ Solar Maintenance</div>
+            <div>✔ 24/7 Support</div>
         </div>
 
     </div>
@@ -104,69 +86,25 @@
 <!-- ================= SERVICES ================= -->
 <section class="services" id="services">
 
-    <div class="section-title" data-aos="fade-up">
-        <h4>OUR SERVICES</h4>
-        <h2>Our Services</h2>
-    </div>
+    <h2 class="section-title">Our Services</h2>
 
-    <div class="service-container">
+    <div class="service-boxes">
 
-        <div class="service-card">
+        <div class="card">
             <h3>Residential Solar</h3>
-            <p>Complete rooftop solar systems for homes.</p>
+            <p>Solar systems for homes with installation support.</p>
         </div>
 
-        <div class="service-card">
+        <div class="card">
             <h3>Commercial Solar</h3>
-            <p>Smart solar solutions for businesses.</p>
+            <p>Power solutions for industries and businesses.</p>
         </div>
 
-        <div class="service-card">
+        <div class="card">
             <h3>Maintenance</h3>
-            <p>Cleaning and servicing for better performance.</p>
+            <p>Regular servicing for better efficiency.</p>
         </div>
 
-    </div>
-
-</section>
-
-<!-- ================= STATS ================= -->
-<section class="stats">
-
-    <div class="stat-box">
-        <h2>500+</h2>
-        <p>Projects Completed</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>300+</h2>
-        <p>Happy Customers</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>10+</h2>
-        <p>Years Experience</p>
-    </div>
-
-    <div class="stat-box">
-        <h2>24/7</h2>
-        <p>Support</p>
-    </div>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section class="projects" id="projects">
-
-    <div class="section-title">
-        <h4>OUR PROJECTS</h4>
-        <h2>Recent Installations</h2>
-    </div>
-
-    <div class="project-gallery">
-        <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=1974&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1974&auto=format&fit=crop">
-        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1974&auto=format&fit=crop">
     </div>
 
 </section>
@@ -174,19 +112,16 @@
 <!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
 
-    <div class="section-title">
-        <h4>CONTACT US</h4>
-        <h2>Get In Touch</h2>
-    </div>
+    <h2 class="section-title">Contact Us</h2>
 
     <form class="contact-form" id="contact-form">
 
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <input type="text" id="phone" placeholder="Phone Number" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <textarea id="message" placeholder="Message" required></textarea>
 
-        <button type="submit" class="primary-btn">
+        <button type="submit" class="btn primary">
             Send on WhatsApp
         </button>
 
@@ -196,19 +131,10 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-
-    <h2>Om Sai Enterprises</h2>
-    <p>Solar Energy Solutions For Homes & Businesses</p>
-    <p>© 2026 Om Sai Enterprises. All Rights Reserved.</p>
-
+    <p>© 2026 Om Sai Enterprises</p>
 </footer>
 
-<!-- ================= WHATSAPP FLOAT ================= -->
-<a href="https://wa.me/918888752000" class="whatsapp-float" target="_blank">
-    💬
-</a>
-
-<!-- ================= SCRIPT ================= -->
+<!-- ================= WHATSAPP SCRIPT ================= -->
 <script>
 document.getElementById("contact-form").addEventListener("submit", function(e){
     e.preventDefault();
@@ -218,10 +144,9 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
     let phone = document.getElementById("phone").value;
     let message = document.getElementById("message").value;
 
-    let whatsappNumber = "918888752000";
+    let number = "918888752000";
 
-    let url = "https://wa.me/" + whatsappNumber + "?text="
-        + "Hello Om Sai Enterprises,%0a%0a"
+    let url = "https://wa.me/" + number + "?text="
         + "Name: " + name + "%0a"
         + "Email: " + email + "%0a"
         + "Phone: " + phone + "%0a"
@@ -230,16 +155,6 @@ document.getElementById("contact-form").addEventListener("submit", function(e){
     window.open(url, "_blank");
 });
 </script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({
-    duration: 1200,
-    once: true
-});
-</script>
-
-<script src="script.js"></script>
 
 </body>
 </html>
