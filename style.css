@@ -50,17 +50,21 @@ body{
 
 .logo img{
 
-    height:65px;
+    height:80px;
 
-    width:65px;
+    width:auto;
 
-    object-fit:cover;
+    object-fit:contain;
 
-    border-radius:12px;
+    background:transparent;
 
-    background:white;
+    padding:0;
 
-    padding:5px;
+    border:none;
+
+    box-shadow:none;
+
+    display:block;
 }
 
 .logo-text h2{
@@ -151,7 +155,7 @@ body{
     color:#111;
 }
 
-/* Hero */
+/* Hero Section */
 
 .hero{
 
@@ -591,7 +595,7 @@ body{
     margin-bottom:10px;
 }
 
-/* WhatsApp */
+/* WhatsApp Button */
 
 .whatsapp-float{
 
@@ -620,6 +624,8 @@ body{
     text-decoration:none;
 
     z-index:1000;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* Responsive */
@@ -666,9 +672,7 @@ body{
 
     .logo img{
 
-        height:55px;
-
-        width:55px;
+        height:60px;
     }
 
     .logo-text h2{
@@ -682,42 +686,52 @@ body{
     }
 
     .hero-content h1{
+
         font-size:48px;
     }
 
     .hero-content p{
+
         font-size:17px;
     }
 
     .hero-buttons{
+
         flex-direction:column;
     }
 
     .about{
+
         padding:80px 25px;
     }
 
     .about-image img{
+
         width:100%;
     }
 
     .services{
+
         padding:80px 25px;
     }
 
     .projects{
+
         padding:80px 25px;
     }
 
     .project-gallery img{
+
         width:100%;
     }
 
     .service-card{
+
         width:100%;
     }
 
     .about-features{
+
         grid-template-columns:1fr;
     }
 }
