@@ -7,7 +7,6 @@
 
     <title>Om Sai Enterprises | Solar Energy Solutions</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
@@ -18,7 +17,6 @@
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Favicon -->
     <link rel="icon" href="om-sai-logo.png">
 </head>
 
@@ -63,15 +61,11 @@
         <div class="hero-buttons">
 
             <a href="#services">
-                <button class="primary-btn">
-                    Our Services
-                </button>
+                <button class="primary-btn">Our Services</button>
             </a>
 
-            <a href="#services">
-                <button class="secondary-btn">
-                    Explore More
-                </button>
+            <a href="#contact">
+                <button class="secondary-btn">Get a Service</button>
             </a>
 
         </div>
@@ -93,14 +87,14 @@
         <h2>Trusted Solar Energy Solutions</h2>
 
         <p>
-            Om Sai Enterprises provides affordable and reliable solar solutions for homes, offices, industries, and commercial buildings with professional installation and support.
+            Om Sai Enterprises provides affordable and reliable solar solutions for homes, offices, industries, and commercial buildings.
         </p>
 
         <div class="about-features">
             <div class="feature">✔ Residential Solar</div>
             <div class="feature">✔ Commercial Solar</div>
             <div class="feature">✔ Solar Maintenance</div>
-            <div class="feature">✔ 24/7 Customer Support</div>
+            <div class="feature">✔ 24/7 Support</div>
         </div>
 
     </div>
@@ -117,19 +111,19 @@
 
     <div class="service-container">
 
-        <div class="service-card" data-aos="zoom-in">
+        <div class="service-card">
             <h3>Residential Solar</h3>
-            <p>Complete rooftop solar systems for homes with installation and maintenance.</p>
+            <p>Complete rooftop solar systems for homes.</p>
         </div>
 
-        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="service-card">
             <h3>Commercial Solar</h3>
-            <p>Smart solar solutions for offices, industries, and commercial buildings.</p>
+            <p>Smart solar solutions for businesses.</p>
         </div>
 
-        <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-            <h3>Maintenance & Support</h3>
-            <p>Professional cleaning, servicing, and support for better performance.</p>
+        <div class="service-card">
+            <h3>Maintenance</h3>
+            <p>Cleaning and servicing for better performance.</p>
         </div>
 
     </div>
@@ -164,7 +158,7 @@
 <!-- ================= PROJECTS ================= -->
 <section class="projects" id="projects">
 
-    <div class="section-title" data-aos="fade-up">
+    <div class="section-title">
         <h4>OUR PROJECTS</h4>
         <h2>Recent Installations</h2>
     </div>
@@ -180,20 +174,20 @@
 <!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
 
-    <div class="section-title" data-aos="fade-up">
+    <div class="section-title">
         <h4>CONTACT US</h4>
         <h2>Get In Touch</h2>
     </div>
 
-    <form class="contact-form" data-aos="fade-up">
+    <form class="contact-form" id="contact-form">
 
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Phone Number" required>
-        <textarea placeholder="Your Message"></textarea>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
 
         <button type="submit" class="primary-btn">
-            Send Message
+            Send on WhatsApp
         </button>
 
     </form>
@@ -209,12 +203,34 @@
 
 </footer>
 
-<!-- ================= WHATSAPP ================= -->
-<a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank">
+<!-- ================= WHATSAPP FLOAT ================= -->
+<a href="https://wa.me/918888752000" class="whatsapp-float" target="_blank">
     💬
 </a>
 
-<!-- AOS -->
+<!-- ================= SCRIPT ================= -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    let whatsappNumber = "918888752000";
+
+    let url = "https://wa.me/" + whatsappNumber + "?text="
+        + "Hello Om Sai Enterprises,%0a%0a"
+        + "Name: " + name + "%0a"
+        + "Email: " + email + "%0a"
+        + "Phone: " + phone + "%0a"
+        + "Message: " + message;
+
+    window.open(url, "_blank");
+});
+</script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init({
