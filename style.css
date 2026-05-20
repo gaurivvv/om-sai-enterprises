@@ -13,7 +13,7 @@ body{
     overflow-x:hidden;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 
 .navbar{
 
@@ -30,14 +30,14 @@ body{
 
     align-items:center;
 
-    padding:20px 80px;
+    padding:10px 80px;
 
     z-index:1000;
 
     transition:0.4s;
 }
 
-/* Logo */
+/* ================= LOGO ================= */
 
 .logo{
 
@@ -50,7 +50,7 @@ body{
 
 .logo img{
 
-    height:80px;
+    height:120px;
 
     width:auto;
 
@@ -71,7 +71,7 @@ body{
 
     color:white;
 
-    font-size:24px;
+    font-size:26px;
 
     font-weight:700;
 
@@ -87,7 +87,7 @@ body{
     letter-spacing:1px;
 }
 
-/* Navigation */
+/* ================= NAVIGATION ================= */
 
 .nav-links{
 
@@ -116,7 +116,7 @@ body{
     color:#f4b400;
 }
 
-/* Hamburger */
+/* ================= MOBILE MENU ================= */
 
 .menu-toggle{
 
@@ -129,7 +129,7 @@ body{
     cursor:pointer;
 }
 
-/* Sticky Navbar */
+/* ================= STICKY NAVBAR ================= */
 
 .sticky{
 
@@ -155,7 +155,7 @@ body{
     color:#111;
 }
 
-/* Hero Section */
+/* ================= HERO SECTION ================= */
 
 .hero{
 
@@ -238,7 +238,7 @@ body{
     margin-bottom:40px;
 }
 
-/* Buttons */
+/* ================= BUTTONS ================= */
 
 .hero-buttons{
 
@@ -301,7 +301,7 @@ body{
     color:black;
 }
 
-/* About */
+/* ================= ABOUT ================= */
 
 .about{
 
@@ -381,7 +381,7 @@ body{
     box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* Services */
+/* ================= SERVICES ================= */
 
 .services{
 
@@ -452,7 +452,7 @@ body{
     color:#666;
 }
 
-/* Stats */
+/* ================= STATS ================= */
 
 .stats{
 
@@ -485,7 +485,7 @@ body{
     color:white;
 }
 
-/* Projects */
+/* ================= PROJECTS ================= */
 
 .projects{
 
@@ -523,7 +523,7 @@ body{
     transform:scale(1.05);
 }
 
-/* Contact */
+/* ================= CONTACT ================= */
 
 .contact{
 
@@ -570,7 +570,7 @@ body{
     border-color:#f4b400;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 
 .footer{
 
@@ -595,7 +595,7 @@ body{
     margin-bottom:10px;
 }
 
-/* WhatsApp Button */
+/* ================= WHATSAPP ================= */
 
 .whatsapp-float{
 
@@ -628,7 +628,7 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Responsive */
+/* ================= RESPONSIVE ================= */
 
 @media(max-width:768px){
 
@@ -640,7 +640,7 @@ body{
 
         position:absolute;
 
-        top:90px;
+        top:100px;
         left:0;
 
         width:100%;
@@ -667,12 +667,12 @@ body{
     }
 
     .navbar{
-        padding:20px 25px;
+        padding:10px 25px;
     }
 
     .logo img{
 
-        height:60px;
+        height:85px;
     }
 
     .logo-text h2{
