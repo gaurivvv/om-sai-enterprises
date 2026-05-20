@@ -37,9 +37,50 @@ body{
     transition:0.4s;
 }
 
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
 .logo img{
 
-    height:70px;
+    height:65px;
+
+    width:65px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    background:white;
+
+    padding:5px;
+}
+
+.logo-text h2{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    line-height:1.1;
+}
+
+.logo-text p{
+
+    color:#f4b400;
+
+    font-size:13px;
+
+    letter-spacing:1px;
 }
 
 /* Navigation */
@@ -101,6 +142,11 @@ body{
 }
 
 .sticky .menu-toggle{
+
+    color:#111;
+}
+
+.sticky .logo-text h2{
 
     color:#111;
 }
@@ -616,6 +662,23 @@ body{
 
     .navbar{
         padding:20px 25px;
+    }
+
+    .logo img{
+
+        height:55px;
+
+        width:55px;
+    }
+
+    .logo-text h2{
+
+        font-size:18px;
+    }
+
+    .logo-text p{
+
+        font-size:11px;
     }
 
     .hero-content h1{
