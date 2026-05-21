@@ -48,8 +48,8 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
+    color: white;
 }
 
 .hero h1 {
@@ -90,10 +90,6 @@ nav a {
 .about-img img {
     width: 420px;
     border-radius: 15px;
-}
-
-.about-text {
-    max-width: 500px;
 }
 
 /* ================= SERVICES ================= */
@@ -146,12 +142,6 @@ nav a {
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.testimonial-card p {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
 /* ================= STATS ================= */
 
 .stats {
@@ -201,7 +191,33 @@ footer {
     color: white;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= WHATSAPP FLOAT BUTTON ================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+}
+
+.wa-icon {
+    font-size: 22px;
+}
 
 @media(max-width:768px){
 
@@ -226,5 +242,14 @@ footer {
     .testimonial-container{
         flex-direction:column;
         align-items:center;
+    }
+
+    .whatsapp-float {
+        padding: 14px;
+        border-radius: 50%;
+    }
+
+    .wa-text {
+        display: none;
     }
 }

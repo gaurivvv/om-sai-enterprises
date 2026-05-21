@@ -111,17 +111,17 @@
     <div class="testimonial-container">
 
         <div class="testimonial-card">
-            <p>"Excellent solar installation service. Very professional team."</p>
+            <p>"Excellent service and installation. Very professional."</p>
             <h4>- Rahul Patil</h4>
         </div>
 
         <div class="testimonial-card">
-            <p>"Great savings on electricity bill after installation."</p>
+            <p>"My electricity bill reduced a lot after solar setup."</p>
             <h4>- Priya Sharma</h4>
         </div>
 
         <div class="testimonial-card">
-            <p>"On-time work and very supportive staff."</p>
+            <p>"Great support and on-time work delivery."</p>
             <h4>- Amit Deshmukh</h4>
         </div>
 
@@ -177,6 +177,16 @@
     <p>© 2026 Om Sai Enterprises</p>
 </footer>
 
+<!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+<a href="https://wa.me/918888752000?text=Hello%20I%20want%20solar%20installation%20details"
+   class="whatsapp-float"
+   target="_blank">
+
+    <span class="wa-icon">💬</span>
+    <span class="wa-text">Chat with us</span>
+
+</a>
+
 <!-- COUNTER SCRIPT -->
 <script>
 const counters = document.querySelectorAll('.counter');
@@ -199,28 +209,6 @@ counters.forEach(counter => {
     };
 
     update();
-});
-</script>
-
-<!-- WHATSAPP SCRIPT -->
-<script>
-document.getElementById("contact-form").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let message = document.getElementById("message").value;
-
-    let number = "918888752000";
-
-    let url = "https://wa.me/" + number + "?text="
-        + "Name: " + name + "%0a"
-        + "Email: " + email + "%0a"
-        + "Phone: " + phone + "%0a"
-        + "Message: " + message;
-
-    window.open(url, "_blank");
 });
 </script>
 
