@@ -14,6 +14,15 @@
 
 <body>
 
+<!-- ================= LOADER ================= -->
+<div id="loader">
+    <div class="loader-content">
+        <div class="solar-loader"></div>
+        <h2>Om Sai Enterprises</h2>
+        <p>Loading Solar Experience...</p>
+    </div>
+</div>
+
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
 
@@ -111,17 +120,17 @@
     <div class="testimonial-container">
 
         <div class="testimonial-card">
-            <p>"Excellent service and installation. Very professional."</p>
+            <p>"Excellent service and smooth installation."</p>
             <h4>- Rahul Patil</h4>
         </div>
 
         <div class="testimonial-card">
-            <p>"My electricity bill reduced a lot after solar setup."</p>
+            <p>"Electricity bill reduced a lot after solar setup."</p>
             <h4>- Priya Sharma</h4>
         </div>
 
         <div class="testimonial-card">
-            <p>"Great support and on-time work delivery."</p>
+            <p>"Professional and on-time delivery."</p>
             <h4>- Amit Deshmukh</h4>
         </div>
 
@@ -177,7 +186,7 @@
     <p>© 2026 Om Sai Enterprises</p>
 </footer>
 
-<!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+<!-- ================= WHATSAPP FLOAT ================= -->
 <a href="https://wa.me/918888752000?text=Hello%20I%20want%20solar%20installation%20details"
    class="whatsapp-float"
    target="_blank">
@@ -187,7 +196,7 @@
 
 </a>
 
-<!-- COUNTER SCRIPT -->
+<!-- ================= COUNTER SCRIPT ================= -->
 <script>
 const counters = document.querySelectorAll('.counter');
 
@@ -209,6 +218,23 @@ counters.forEach(counter => {
     };
 
     update();
+});
+</script>
+
+<!-- ================= LOADER SCRIPT ================= -->
+<script>
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.transition = "0.5s ease";
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 500);
+
+    }, 1200);
 });
 </script>
 
