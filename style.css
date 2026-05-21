@@ -1,201 +1,180 @@
-/* ================= RESET ================= */
 
+/* DESIGN SYSTEM */
+:root {
+    --primary:#f4b400;
+    --dark:#0b0f19;
+}
+
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-behavior:smooth;
+    scroll-snap-type:y mandatory;
 }
 
-/* ================= LOADER ================= */
+section {
+    scroll-snap-align:start;
+}
 
+/* LOADER */
 #loader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #0b0f19;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    color: white;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
 }
 
 .solar-loader {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 6px solid rgba(255,255,255,0.2);
-    border-top: 6px solid #f4b400;
-    animation: spin 1s linear infinite;
+    width:60px;
+    height:60px;
+    border:6px solid #333;
+    border-top:6px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
 }
 
 @keyframes spin {
-    100% { transform: rotate(360deg); }
+    100%{transform:rotate(360deg);}
 }
 
-/* ================= NAVBAR ================= */
-
+/* NAVBAR */
 .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 60px;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    z-index: 1000;
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 50px;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(20px);
+    z-index:1000;
 }
 
-.logo {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+/* HERO VIDEO */
+.hero-video {
+    height:100vh;
+    position:relative;
+    overflow:hidden;
 }
 
-.logo img {
-    height: 60px;
+.hero-video video {
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-/* ================= HERO ================= */
-
-.hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1509391366360-2e959784a276");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+.hero-overlay {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
-/* ================= BUTTONS ================= */
+.hero-overlay h1 {
+    font-size:60px;
+}
 
+/* BUTTONS */
 .btn {
-    padding: 12px 25px;
-    border-radius: 30px;
-    display: inline-block;
-    margin: 10px;
-    text-decoration: none;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    margin:10px;
 }
 
 .primary {
-    background: #f4b400;
-    color: white;
+    background:var(--primary);
+    color:white;
 }
 
 .secondary {
-    border: 2px solid white;
-    color: white;
+    border:2px solid white;
+    color:white;
 }
 
-/* ================= SECTIONS FIX ================= */
-
-section {
-    padding: 100px 80px;
+/* STORY */
+.story {
+    padding:120px 80px;
+    text-align:center;
 }
 
-/* ================= ABOUT ================= */
-
-.about {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    background: #f8f9fa;
-    align-items: center;
-}
-
-.about-img img {
-    width: 420px;
-    border-radius: 15px;
-}
-
-/* ================= SERVICES (FIXED PREMIUM LOOK) ================= */
-
+/* SERVICES */
 .services {
-    background: #fff;
+    padding:120px 80px;
 }
 
 .service-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .service-card {
-    width: 280px;
-    padding: 25px;
-    border-radius: 18px;
-    background: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    width:280px;
+    padding:30px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform:translateY(-10px);
 }
 
-/* ================= STATS ================= */
-
+/* STATS */
 .stats {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    background: #111;
-    color: white;
-    flex-wrap: wrap;
-    text-align: center;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:80px;
+    background:#111;
+    color:white;
 }
 
-.stats h2 {
-    color: #f4b400;
-    font-size: 45px;
+/* CONTACT */
+.contact {
+    padding:120px 80px;
+    text-align:center;
 }
-
-/* ================= CONTACT ================= */
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-    gap: 10px;
+    display:flex;
+    flex-direction:column;
+    max-width:400px;
+    margin:auto;
 }
 
-input, textarea {
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
+input,textarea {
+    margin:10px 0;
+    padding:12px;
 }
 
-/* ================= FOOTER ================= */
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: white;
-}
-
-/* ================= WHATSAPP ================= */
-
+/* WHATSAPP */
 .whatsapp {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: white;
-    padding: 14px 18px;
-    border-radius: 50px;
-    text-decoration: none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    color:white;
 }
