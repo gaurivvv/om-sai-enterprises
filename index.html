@@ -9,7 +9,11 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +51,7 @@
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
 
-    <div class="hero-content">
+    <div class="hero-content" data-aos="fade-up">
         <h1>Powering Your Future With Solar Energy</h1>
         <p>Affordable & Reliable Solar Solutions</p>
 
@@ -62,17 +66,17 @@
 <!-- ================= ABOUT ================= -->
 <section class="about" id="about">
 
-    <div class="about-img">
+    <div class="about-img" data-aos="fade-right">
         <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d">
     </div>
 
-    <div class="about-text">
+    <div class="about-text" data-aos="fade-left">
 
         <h4>ABOUT US</h4>
         <h2>Trusted Solar Company</h2>
 
         <p>
-            We provide solar solutions for homes, industries, and businesses.
+            We provide solar solutions for homes, industries, and businesses with modern technology.
         </p>
 
         <div class="features">
@@ -89,21 +93,21 @@
 <!-- ================= SERVICES ================= -->
 <section class="services" id="services">
 
-    <h2 class="title">Our Services</h2>
+    <h2 class="title" data-aos="fade-up">Our Services</h2>
 
     <div class="cards">
 
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <h3>Residential Solar</h3>
             <p>Complete home solar installation solutions.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
             <h3>Commercial Solar</h3>
             <p>Power solutions for businesses and industries.</p>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
             <h3>Maintenance</h3>
             <p>Regular servicing for maximum efficiency.</p>
         </div>
@@ -115,22 +119,22 @@
 <!-- ================= TESTIMONIALS ================= -->
 <section class="testimonials">
 
-    <h2 class="title">What Our Customers Say</h2>
+    <h2 class="title" data-aos="fade-up">What Our Customers Say</h2>
 
     <div class="testimonial-container">
 
-        <div class="testimonial-card">
-            <p>"Excellent service and smooth installation."</p>
+        <div class="testimonial-card" data-aos="fade-up">
+            <p>"Excellent service and installation quality."</p>
             <h4>- Rahul Patil</h4>
         </div>
 
-        <div class="testimonial-card">
-            <p>"Electricity bill reduced a lot after solar setup."</p>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <p>"Electricity bill reduced significantly."</p>
             <h4>- Priya Sharma</h4>
         </div>
 
-        <div class="testimonial-card">
-            <p>"Professional and on-time delivery."</p>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <p>"Professional team and on-time delivery."</p>
             <h4>- Amit Deshmukh</h4>
         </div>
 
@@ -141,22 +145,22 @@
 <!-- ================= STATS ================= -->
 <section class="stats">
 
-    <div class="stat">
+    <div class="stat" data-aos="fade-up">
         <h2 class="counter" data-target="500">0</h2>
         <p>Projects Completed</p>
     </div>
 
-    <div class="stat">
+    <div class="stat" data-aos="fade-up" data-aos-delay="100">
         <h2 class="counter" data-target="300">0</h2>
         <p>Happy Customers</p>
     </div>
 
-    <div class="stat">
+    <div class="stat" data-aos="fade-up" data-aos-delay="200">
         <h2 class="counter" data-target="10">0</h2>
         <p>Years Experience</p>
     </div>
 
-    <div class="stat">
+    <div class="stat" data-aos="fade-up" data-aos-delay="300">
         <h2 class="counter" data-target="24">0</h2>
         <p>Support</p>
     </div>
@@ -166,9 +170,9 @@
 <!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
 
-    <h2 class="title">Contact Us</h2>
+    <h2 class="title" data-aos="fade-up">Contact Us</h2>
 
-    <form id="contact-form">
+    <form id="contact-form" data-aos="fade-up">
 
         <input type="text" id="name" placeholder="Name" required>
         <input type="email" id="email" placeholder="Email" required>
@@ -235,6 +239,17 @@ window.addEventListener("load", function () {
         }, 500);
 
     }, 1200);
+});
+</script>
+
+<!-- ================= AOS SCRIPT ================= -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 120
 });
 </script>
 
