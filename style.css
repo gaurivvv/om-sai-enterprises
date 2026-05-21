@@ -123,7 +123,36 @@ nav a {
     border-radius: 12px;
 }
 
-/* ================= STATS (COUNTERS) ================= */
+/* ================= TESTIMONIALS ================= */
+
+.testimonials {
+    padding: 80px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 280px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ================= STATS ================= */
 
 .stats {
     display: flex;
@@ -193,7 +222,8 @@ footer {
         width:100%;
     }
 
-    .cards{
+    .cards,
+    .testimonial-container{
         flex-direction:column;
         align-items:center;
     }

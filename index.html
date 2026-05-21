@@ -58,11 +58,12 @@
     </div>
 
     <div class="about-text">
+
         <h4>ABOUT US</h4>
         <h2>Trusted Solar Company</h2>
 
         <p>
-            We provide solar solutions for homes, industries, and businesses with high efficiency and support.
+            We provide solar solutions for homes, industries, and businesses.
         </p>
 
         <div class="features">
@@ -71,6 +72,7 @@
             <div>✔ Maintenance</div>
             <div>✔ 24/7 Support</div>
         </div>
+
     </div>
 
 </section>
@@ -101,7 +103,33 @@
 
 </section>
 
-<!-- ================= STATS (COUNTER) ================= -->
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+
+    <h2 class="title">What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>"Excellent solar installation service. Very professional team."</p>
+            <h4>- Rahul Patil</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Great savings on electricity bill after installation."</p>
+            <h4>- Priya Sharma</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"On-time work and very supportive staff."</p>
+            <h4>- Amit Deshmukh</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STATS ================= -->
 <section class="stats">
 
     <div class="stat">
@@ -149,32 +177,32 @@
     <p>© 2026 Om Sai Enterprises</p>
 </footer>
 
-<!-- ================= COUNTER SCRIPT ================= -->
+<!-- COUNTER SCRIPT -->
 <script>
 const counters = document.querySelectorAll('.counter');
 
 counters.forEach(counter => {
     counter.innerText = '0';
 
-    const updateCounter = () => {
+    const update = () => {
         const target = +counter.getAttribute('data-target');
         const current = +counter.innerText;
 
-        const increment = target / 100;
+        const inc = target / 100;
 
         if (current < target) {
-            counter.innerText = Math.ceil(current + increment);
-            setTimeout(updateCounter, 20);
+            counter.innerText = Math.ceil(current + inc);
+            setTimeout(update, 20);
         } else {
             counter.innerText = target;
         }
     };
 
-    updateCounter();
+    update();
 });
 </script>
 
-<!-- ================= WHATSAPP SCRIPT ================= -->
+<!-- WHATSAPP SCRIPT -->
 <script>
 document.getElementById("contact-form").addEventListener("submit", function(e){
     e.preventDefault();
