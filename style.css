@@ -1,4 +1,4 @@
-/* ================= GLOBAL ================= */
+/* ================= RESET ================= */
 
 * {
     margin: 0;
@@ -7,13 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: #fff;
-}
-
-/* smooth scroll */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 /* ================= LOADER ================= */
@@ -27,12 +23,7 @@ html {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    flex-direction: column;
     color: white;
-}
-
-.loader-content {
-    text-align: center;
 }
 
 .solar-loader {
@@ -42,22 +33,35 @@ html {
     border: 6px solid rgba(255,255,255,0.2);
     border-top: 6px solid #f4b400;
     animation: spin 1s linear infinite;
-    margin: 0 auto 20px;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
 /* ================= NAVBAR ================= */
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     padding: 15px 60px;
     background: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
 }
 
 /* ================= HERO ================= */
@@ -67,7 +71,6 @@ html {
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
     url("https://images.unsplash.com/photo-1509391366360-2e959784a276");
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,9 +83,9 @@ html {
 .btn {
     padding: 12px 25px;
     border-radius: 30px;
-    text-decoration: none;
     display: inline-block;
     margin: 10px;
+    text-decoration: none;
 }
 
 .primary {
@@ -95,60 +98,51 @@ html {
     color: white;
 }
 
+/* ================= SECTIONS FIX ================= */
+
+section {
+    padding: 100px 80px;
+}
+
 /* ================= ABOUT ================= */
 
 .about {
     display: flex;
     gap: 50px;
-    padding: 100px;
     flex-wrap: wrap;
-    align-items: center;
     background: #f8f9fa;
+    align-items: center;
 }
 
-/* ================= SERVICES ================= */
+.about-img img {
+    width: 420px;
+    border-radius: 15px;
+}
+
+/* ================= SERVICES (FIXED PREMIUM LOOK) ================= */
 
 .services {
-    padding: 80px;
-    text-align: center;
+    background: #fff;
 }
 
-.cards {
+.service-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
-.card {
-    width: 260px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    border-radius: 12px;
-}
-
-/* ================= TESTIMONIALS ================= */
-
-.testimonials {
-    padding: 80px;
-    text-align: center;
-    background: #f8f9fa;
-}
-
-.testimonial-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.testimonial-card {
+.service-card {
     width: 280px;
-    padding: 20px;
+    padding: 25px;
+    border-radius: 18px;
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
 }
 
 /* ================= STATS ================= */
@@ -157,25 +151,18 @@ html {
     display: flex;
     justify-content: center;
     gap: 60px;
-    padding: 80px;
     background: #111;
     color: white;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.stat h2 {
-    font-size: 50px;
+.stats h2 {
     color: #f4b400;
+    font-size: 45px;
 }
 
 /* ================= CONTACT ================= */
-
-.contact {
-    padding: 80px;
-    text-align: center;
-    background: #f8f9fa;
-}
 
 form {
     display: flex;
@@ -187,8 +174,8 @@ form {
 
 input, textarea {
     padding: 12px;
-    border: 1px solid #ddd;
     border-radius: 10px;
+    border: 1px solid #ddd;
 }
 
 /* ================= FOOTER ================= */
@@ -202,63 +189,13 @@ footer {
 
 /* ================= WHATSAPP ================= */
 
-.whatsapp-float {
+.whatsapp {
     position: fixed;
     bottom: 25px;
     right: 25px;
     background: #25D366;
     color: white;
-    padding: 12px 16px;
+    padding: 14px 18px;
     border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    z-index: 999;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.05);
-}
-
-.wa-icon {
-    font-size: 22px;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media(max-width:768px){
-
-    .navbar{
-        padding:10px 20px;
-    }
-
-    .hero h1{
-        font-size:32px;
-    }
-
-    .about{
-        padding:50px;
-    }
-
-    .about-img img{
-        width:100%;
-    }
-
-    .cards,
-    .testimonial-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .whatsapp-float {
-        padding: 14px;
-        border-radius: 50%;
-    }
-
-    .wa-text {
-        display: none;
-    }
 }
