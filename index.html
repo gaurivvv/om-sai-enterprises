@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Om Sai Enterprises | Solar Energy</title>
+<title>Om Sai Enterprises | Solar Solutions</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -18,7 +18,7 @@
 
 <!-- LOADER -->
 <div id="loader">
-    <div class="solar-loader"></div>
+    <div class="loader"></div>
 </div>
 
 <!-- NAVBAR -->
@@ -39,87 +39,73 @@
     </nav>
 </header>
 
-<!-- HERO VIDEO -->
-<section class="hero-video" id="home">
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Powering Your Future With Solar Energy</h1>
+        <p>Clean. Affordable. Sustainable.</p>
 
-<video autoplay muted loop>
-    <source src="solar.mp4" type="video/mp4">
-</video>
-
-<div class="hero-overlay" data-aos="fade-up">
-    <h1>Powering a Sustainable Future</h1>
-    <p>Solar Energy for Homes & Businesses</p>
-
-    <div>
-        <a href="#services" class="btn primary">Services</a>
-        <a href="#contact" class="btn secondary">Request Service</a>
+        <div class="btn-group">
+            <a href="#services" class="btn primary">Our Services</a>
+            <a href="#contact" class="btn secondary">Request Service</a>
+        </div>
     </div>
-</div>
-
 </section>
 
 <!-- ABOUT -->
-<section class="story" id="about" data-aos="fade-up">
-<h2>About Us</h2>
-<p>We provide reliable solar solutions for homes, industries and businesses.</p>
+<section class="section" id="about">
+    <h2 class="title" data-aos="fade-up">About Us</h2>
+
+    <div class="about" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d">
+
+        <div>
+            <p>
+                Om Sai Enterprises provides reliable solar solutions for homes, industries, and businesses.
+            </p>
+
+            <ul>
+                <li>✔ Residential Solar</li>
+                <li>✔ Commercial Solar</li>
+                <li>✔ Maintenance</li>
+                <li>✔ 24/7 Support</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
+<section class="section" id="services">
 
-<h2 class="section-title" data-aos="fade-up">Our Services</h2>
+<h2 class="title" data-aos="fade-up">Our Services</h2>
 
-<div class="service-container">
+<div class="grid">
 
-<div class="service-card" data-aos="zoom-in">
+<div class="card" data-aos="zoom-in">
 <h3>Residential Solar</h3>
-<p>Save electricity at home with solar systems.</p>
+<p>Power your home efficiently with solar systems.</p>
 </div>
 
-<div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+<div class="card" data-aos="zoom-in" data-aos-delay="100">
 <h3>Commercial Solar</h3>
-<p>Reduce business electricity cost.</p>
+<p>Reduce business electricity costs effectively.</p>
 </div>
 
-<div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+<div class="card" data-aos="zoom-in" data-aos-delay="200">
 <h3>Maintenance</h3>
-<p>System check & performance optimization.</p>
+<p>Regular servicing for maximum performance.</p>
 </div>
 
 </div>
 
-</section>
-
-<!-- STORY SECTIONS -->
-<section class="story" data-aos="fade-up">
-<h2>Step 1: Consultation</h2>
-<p>We understand your energy needs.</p>
-</section>
-
-<section class="story" data-aos="fade-up">
-<h2>Step 2: Design</h2>
-<p>Custom solar system planning.</p>
-</section>
-
-<section class="story" data-aos="fade-up">
-<h2>Step 3: Installation</h2>
-<p>Fast and professional setup.</p>
-</section>
-
-<!-- STATS -->
-<section class="stats">
-<div>500+ Projects</div>
-<div>300+ Customers</div>
-<div>10+ Years</div>
-<div>24/7 Support</div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact" data-aos="fade-up">
+<section class="section" id="contact">
 
-<h2>Contact Us</h2>
+<h2 class="title" data-aos="fade-up">Contact Us</h2>
 
-<form>
+<form data-aos="fade-up">
 <input type="text" placeholder="Name">
 <input type="email" placeholder="Email">
 <input type="text" placeholder="Phone">
@@ -130,7 +116,7 @@
 </section>
 
 <!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/918888752000">💬 Chat</a>
+<a class="whatsapp" href="https://wa.me/918888752000">💬</a>
 
 <!-- SCRIPTS -->
 <script>
@@ -141,7 +127,7 @@ window.addEventListener("load", () => {
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init({ duration: 1000, once: true });
+AOS.init({ duration: 900, once: true });
 </script>
 
 </body>

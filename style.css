@@ -1,10 +1,4 @@
 
-/* DESIGN SYSTEM */
-:root {
-    --primary:#f4b400;
-    --dark:#0b0f19;
-}
-
 /* RESET */
 * {
     margin:0;
@@ -15,11 +9,10 @@
 
 html {
     scroll-behavior:smooth;
-    scroll-snap-type:y mandatory;
 }
 
-section {
-    scroll-snap-align:start;
+body {
+    background:#fff;
 }
 
 /* LOADER */
@@ -27,18 +20,18 @@ section {
     position:fixed;
     width:100%;
     height:100vh;
-    background:#000;
+    background:#0b0f19;
     display:flex;
     justify-content:center;
     align-items:center;
     z-index:9999;
 }
 
-.solar-loader {
+.loader {
     width:60px;
     height:60px;
     border:6px solid #333;
-    border-top:6px solid var(--primary);
+    border-top:6px solid #f4b400;
     border-radius:50%;
     animation:spin 1s linear infinite;
 }
@@ -47,48 +40,47 @@ section {
     100%{transform:rotate(360deg);}
 }
 
-/* NAVBAR */
+/* NAVBAR (SAFE FIXED) */
 .navbar {
     position:fixed;
-    width:100%;
     top:0;
+    width:100%;
+    height:80px;
     display:flex;
     justify-content:space-between;
-    padding:15px 50px;
-    background:rgba(255,255,255,0.6);
-    backdrop-filter:blur(20px);
+    align-items:center;
+    padding:0 40px;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
     z-index:1000;
 }
 
-/* HERO VIDEO */
-.hero-video {
-    height:100vh;
-    position:relative;
-    overflow:hidden;
-}
-
-.hero-video video {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.hero-overlay {
-    position:absolute;
-    top:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
-    color:white;
+.logo {
     display:flex;
-    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img {
+    height:55px;
+}
+
+/* HERO */
+.hero {
+    height:100vh;
+    display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276");
+    background-size:cover;
+    color:white;
 }
 
-.hero-overlay h1 {
-    font-size:60px;
+.hero h1 {
+    font-size:50px;
 }
 
 /* BUTTONS */
@@ -97,10 +89,11 @@ section {
     border-radius:30px;
     text-decoration:none;
     margin:10px;
+    display:inline-block;
 }
 
 .primary {
-    background:var(--primary);
+    background:#f4b400;
     color:white;
 }
 
@@ -109,63 +102,64 @@ section {
     color:white;
 }
 
-/* STORY */
-.story {
+/* SECTIONS FIX (IMPORTANT) */
+.section {
     padding:120px 80px;
+}
+
+.title {
     text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
 }
 
-/* SERVICES */
-.services {
-    padding:120px 80px;
+/* ABOUT */
+.about {
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    align-items:center;
 }
 
-.service-container {
+.about img {
+    width:420px;
+    border-radius:15px;
+}
+
+/* SERVICES GRID */
+.grid {
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:25px;
     flex-wrap:wrap;
 }
 
-.service-card {
+.card {
     width:280px;
-    padding:30px;
+    padding:25px;
     background:white;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
-.service-card:hover {
+.card:hover {
     transform:translateY(-10px);
 }
 
-/* STATS */
-.stats {
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:80px;
-    background:#111;
-    color:white;
-}
-
 /* CONTACT */
-.contact {
-    padding:120px 80px;
-    text-align:center;
-}
-
 form {
-    display:flex;
-    flex-direction:column;
     max-width:400px;
     margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
 }
 
 input,textarea {
-    margin:10px 0;
     padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
 }
 
 /* WHATSAPP */
@@ -174,7 +168,13 @@ input,textarea {
     bottom:20px;
     right:20px;
     background:#25D366;
+    color:white;
     padding:15px;
     border-radius:50%;
-    color:white;
+    text-decoration:none;
+}
+
+/* IMPORTANT FIX FOR SCROLL BUG */
+section {
+    scroll-margin-top: 100px;
 }
