@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Om Sai Enterprises | Solar Solutions</title>
+    <title>Om Sai Enterprises | Solar Energy Solutions</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -40,7 +40,7 @@
 
     <div class="hero-content">
         <h1>Powering Your Future With Solar Energy</h1>
-        <p>Affordable & Reliable Solar Solutions for Homes & Businesses</p>
+        <p>Affordable & Reliable Solar Solutions</p>
 
         <div class="btn-group">
             <a href="#services" class="btn primary">Our Services</a>
@@ -54,17 +54,15 @@
 <section class="about" id="about">
 
     <div class="about-img">
-        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d">
     </div>
 
     <div class="about-text">
-
         <h4>ABOUT US</h4>
-        <h2>Trusted Solar Energy Company</h2>
+        <h2>Trusted Solar Company</h2>
 
         <p>
-            We provide high-quality solar installation services for residential,
-            commercial and industrial clients with long-term support.
+            We provide solar solutions for homes, industries, and businesses with high efficiency and support.
         </p>
 
         <div class="features">
@@ -73,7 +71,6 @@
             <div>✔ Maintenance</div>
             <div>✔ 24/7 Support</div>
         </div>
-
     </div>
 
 </section>
@@ -87,12 +84,12 @@
 
         <div class="card">
             <h3>Residential Solar</h3>
-            <p>Complete rooftop solar solutions for homes.</p>
+            <p>Complete home solar installation solutions.</p>
         </div>
 
         <div class="card">
             <h3>Commercial Solar</h3>
-            <p>Power solutions for industries & businesses.</p>
+            <p>Power solutions for businesses and industries.</p>
         </div>
 
         <div class="card">
@@ -100,6 +97,31 @@
             <p>Regular servicing for maximum efficiency.</p>
         </div>
 
+    </div>
+
+</section>
+
+<!-- ================= STATS (COUNTER) ================= -->
+<section class="stats">
+
+    <div class="stat">
+        <h2 class="counter" data-target="500">0</h2>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="stat">
+        <h2 class="counter" data-target="300">0</h2>
+        <p>Happy Customers</p>
+    </div>
+
+    <div class="stat">
+        <h2 class="counter" data-target="10">0</h2>
+        <p>Years Experience</p>
+    </div>
+
+    <div class="stat">
+        <h2 class="counter" data-target="24">0</h2>
+        <p>Support</p>
     </div>
 
 </section>
@@ -126,6 +148,31 @@
 <footer>
     <p>© 2026 Om Sai Enterprises</p>
 </footer>
+
+<!-- ================= COUNTER SCRIPT ================= -->
+<script>
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    counter.innerText = '0';
+
+    const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+
+        const increment = target / 100;
+
+        if (current < target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCounter, 20);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+});
+</script>
 
 <!-- ================= WHATSAPP SCRIPT ================= -->
 <script>

@@ -1,3 +1,5 @@
+/* ================= GLOBAL ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,6 @@
 
 body {
     background: #fff;
-    overflow-x: hidden;
 }
 
 /* ================= NAVBAR ================= */
@@ -15,13 +16,9 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 60px;
-    position: fixed;
-    width: 100%;
     background: white;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .logo {
@@ -35,10 +32,9 @@ body {
 }
 
 nav a {
-    margin: 0 15px;
+    margin: 0 12px;
     text-decoration: none;
     color: #333;
-    font-weight: 500;
 }
 
 /* ================= HERO ================= */
@@ -52,17 +48,12 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: white;
-    padding: 20px;
+    text-align: center;
 }
 
 .hero h1 {
     font-size: 48px;
-}
-
-.hero p {
-    margin-top: 10px;
 }
 
 /* ================= BUTTONS ================= */
@@ -73,7 +64,6 @@ nav a {
     text-decoration: none;
     display: inline-block;
     margin: 10px;
-    font-weight: 500;
 }
 
 .primary {
@@ -90,11 +80,10 @@ nav a {
 
 .about {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 50px;
-    padding: 100px 60px;
+    padding: 100px;
     flex-wrap: wrap;
+    align-items: center;
     background: #f8f9fa;
 }
 
@@ -105,23 +94,6 @@ nav a {
 
 .about-text {
     max-width: 500px;
-}
-
-.about-text h4 {
-    color: #f4b400;
-}
-
-.about-text h2 {
-    font-size: 34px;
-    margin: 10px 0;
-}
-
-.features {
-    margin-top: 15px;
-}
-
-.features div {
-    margin: 5px 0;
 }
 
 /* ================= SERVICES ================= */
@@ -144,11 +116,29 @@ nav a {
 }
 
 .card {
-    width: 250px;
+    width: 260px;
     padding: 20px;
-    background: #fff;
+    background: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     border-radius: 12px;
+}
+
+/* ================= STATS (COUNTERS) ================= */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px;
+    background: #111;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 50px;
+    color: #f4b400;
 }
 
 /* ================= CONTACT ================= */
@@ -191,10 +181,20 @@ footer {
     }
 
     .hero h1{
-        font-size:30px;
+        font-size:32px;
+    }
+
+    .about{
+        padding:50px;
+        justify-content:center;
     }
 
     .about-img img{
         width:100%;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
     }
 }
