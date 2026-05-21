@@ -8,18 +8,11 @@
 <title>Om Sai Enterprises | Solar Solutions</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
-<!-- LOADER -->
-<div id="loader">
-    <div class="loader"></div>
-</div>
 
 <!-- NAVBAR -->
 <header class="navbar">
@@ -27,7 +20,7 @@
         <img src="om-sai-logo.png">
         <div>
             <h2>Om Sai Enterprises</h2>
-            <p>Solar Energy</p>
+            <small>Solar Energy Solutions</small>
         </div>
     </div>
 
@@ -41,13 +34,13 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-    <div class="hero-content" data-aos="fade-up">
-        <h1>Powering Your Future With Solar Energy</h1>
-        <p>Clean. Affordable. Sustainable.</p>
+    <div class="hero-text" data-aos="fade-up">
+        <h1>Clean Energy for a Better Future</h1>
+        <p>Affordable Solar Solutions for Homes & Businesses</p>
 
-        <div class="btn-group">
+        <div class="buttons">
             <a href="#services" class="btn primary">Our Services</a>
-            <a href="#contact" class="btn secondary">Request Service</a>
+            <a href="#contact" class="btn secondary">Get Quote</a>
         </div>
     </div>
 </section>
@@ -56,75 +49,65 @@
 <section class="section" id="about">
     <h2 class="title" data-aos="fade-up">About Us</h2>
 
-    <div class="about" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d">
+    <div class="grid-2">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" data-aos="fade-right">
 
-        <div>
+        <div data-aos="fade-left">
             <p>
-                Om Sai Enterprises provides reliable solar solutions for homes, industries, and businesses.
+                Om Sai Enterprises delivers reliable solar energy solutions for homes, industries, and commercial spaces with long-term savings.
             </p>
 
             <ul>
-                <li>✔ Residential Solar</li>
-                <li>✔ Commercial Solar</li>
-                <li>✔ Maintenance</li>
-                <li>✔ 24/7 Support</li>
+                <li>Residential Solar Installation</li>
+                <li>Commercial Solar Systems</li>
+                <li>Maintenance & Support</li>
+                <li>Energy Consultation</li>
             </ul>
         </div>
     </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section" id="services">
+<section class="section light" id="services">
+    <h2 class="title" data-aos="fade-up">Our Services</h2>
 
-<h2 class="title" data-aos="fade-up">Our Services</h2>
+    <div class="cards">
 
-<div class="grid">
+        <div class="card" data-aos="zoom-in">
+            <h3>Home Solar</h3>
+            <p>Reduce electricity bills with rooftop solar systems.</p>
+        </div>
 
-<div class="card" data-aos="zoom-in">
-<h3>Residential Solar</h3>
-<p>Power your home efficiently with solar systems.</p>
-</div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+            <h3>Business Solar</h3>
+            <p>Power your business efficiently and reduce costs.</p>
+        </div>
 
-<div class="card" data-aos="zoom-in" data-aos-delay="100">
-<h3>Commercial Solar</h3>
-<p>Reduce business electricity costs effectively.</p>
-</div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+            <h3>Maintenance</h3>
+            <p>Regular system checkups for maximum output.</p>
+        </div>
 
-<div class="card" data-aos="zoom-in" data-aos-delay="200">
-<h3>Maintenance</h3>
-<p>Regular servicing for maximum performance.</p>
-</div>
-
-</div>
-
+    </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
+    <h2 class="title" data-aos="fade-up">Contact Us</h2>
 
-<h2 class="title" data-aos="fade-up">Contact Us</h2>
-
-<form data-aos="fade-up">
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email">
-<input type="text" placeholder="Phone">
-<textarea placeholder="Message"></textarea>
-<button class="btn primary">Send</button>
-</form>
-
+    <form data-aos="fade-up">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Phone">
+        <textarea placeholder="Message"></textarea>
+        <button class="btn primary">Send Message</button>
+    </form>
 </section>
 
 <!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/918888752000">💬</a>
 
-<!-- SCRIPTS -->
-<script>
-window.addEventListener("load", () => {
-    document.getElementById("loader").style.display = "none";
-});
-</script>
-
+<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init({ duration: 900, once: true });
